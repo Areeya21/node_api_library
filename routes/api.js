@@ -13,6 +13,7 @@ router.put('/users/:id', userController.updateUser);
 router.delete('/users/:id', userController.deleteUser);
 router.post('/login', userController.login);
 
+
 // Book routes
 router.post('/books', bookController.createBook);
 router.get('/books', bookController.getBooks);
@@ -35,3 +36,4 @@ router.put('/returns/:id', returnController.updateReturn);
 router.delete('/returns/:id', returnController.deleteReturn);
 
 module.exports = router;
+router.post('/login', userController.login);
